@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  
+  <sword>
+    <name>Branch of the Word Tree</name>
+    <hp>200</hp>
+    <mp>200</mp>
+    <str>120</str>
+    <int>80</int>
+    <def>90</def>
+  </sword>
+
+  <armor>
+    <name>Shrek's Robe</name>
+    <hp>1000</hp>
+    <mp>200</mp>
+    <str>50</str>
+    <int>5</int>
+    <def>20</def>
+  </armor>
+
+  <legs>
+    <name>Fancy Leopard Pants</name>
+    <hp>500</hp>
+    <mp>500</mp>
+    <str>20</str>
+    <int>50</int>
+    <def>20</def>
+  </legs>
+
+  <helmet>
+    <name>Michael Jackson's Fedora</name>
+    <hp>500</hp>
+    <mp>1000</mp>
+    <str>20</str>
+    <int>30</int>
+    <def>50</def>
+  </helmet>
+
+  <helmet>
+    <name>Unicorn Helmet</name>
+    <hp>100</hp>
+    <mp>2000</mp>
+    <str>60</str>
+    <int>50</int>
+    <def>70</def>
+  </helmet>
+
+  <boots>
+    <name>Step Shoes</name>
+    <hp>200</hp>
+    <mp>100</mp>
+    <str>20</str>
+    <int>20</int>
+    <def>20</def>
+  </boots>
+  
+  <shield>
+    <name>The Ice Wall</name>
+    <hp>2000</hp>
+    <mp>400</mp>
+    <str>80</str>
+    <int>30</int>
+    <def>200</def>
+  </shield>
+
+</items>

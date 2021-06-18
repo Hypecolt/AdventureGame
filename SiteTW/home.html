@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html  lang="en" class="bg">
+<head>
+    <meta charset="utf-8" />
+    <link href="/styles/stats.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/styles/items.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="screen" />
+    <title>God Is Dead And We Killed Him</title>
+</head>
+<body>
+
+    <h1 class="txtx">Welcome Adventurer</h1>
+
+    <!--Stats-->
+    <div class="stat-bbox">
+        <p class="text-inbox-title">Stats</p>
+        <p class="spent">Mana spent: <span id="mana-spent">0</span></p>
+        <p class="not-enough" id="no_mana">Not Enough Mana!</p>
+        <div class="stts">
+            <p>HP: <span id="chp">0</span> / <span id="hp">0</span></p>
+            <p>MANA: <span id="mp">0</span></p>
+            <p>STR: <span id="str">0</span></p>
+            <p>INT: <span id="int">0</span></p>
+            <p>DEF: <span id="def">0</span></p>
+        </div>
+        <div>
+            <button class="train_stats" onclick="charac.trainHP()">Eat a Fruit</button>
+            <button class="train_stats" onclick="charac.trainINT()">Go to Library</button>
+            <button class="train_stats" onclick="charac.trainSTR()">Lift a Bulldozer</button>
+            <button class="train_stats" onclick="charac.trainDEF()">Become a Sandbag</button>
+        </div>
+        <div class="save_load">
+            <button onclick="charac.save()">Save Game</button>
+            <button onclick="charac.load()">Load Game</button>
+        </div>
+        <button class="train_stats" onclick="charac.newGame()">New Game</button>
+    </div>
+
+    <!--Inventory-->
+    <div class="item-wndw">
+        <p class="text-inbox-title">Equipped Items</p>
+        <div id="inventory">
+        </div>
+    </div>
+
+    <!--Action Window (Canvas)-->
+    <div class="canvas-container">
+        <canvas class="gm-scrn" id="gameScreen"></canvas>
+        <div class="cnv-btn">
+            <button class="cnv-btn" onclick="charac.recoverMana()">Rest</button>
+            <button class="cnv-btn" onclick="charac.addItemStats()">Kill</button>
+            <button class="cnv-btn" onclick="fCanvas()">Retreat</button>
+        </div>
+    </div>
+
+    <!--CSS Sprite-->
+    <div class="torch">
+        <img class="torch-sprite" src="/images/torch.png" alt="" />
+    </div>
+    <div class="torchh">
+        <img class="torch-sprite" src="/images/torch.png" alt="" />
+    </div>
+
+    <!--SVG-->
+    <svg class="sevege" height="130" width="500">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%"
+                      style="stop-color: rgb(81,194,171);  stop-opacity: 1" />
+                <stop offset="100%"
+                      style="stop-color: rgb(32, 79, 150); stop-opacity: 1" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="187" cy="70" rx="170" ry="55" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="45" font-family="Verdana"
+              x="50" y="86">Dungeoners</text>
+    </svg>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/JS/character.js"></script>
+    <script src="/JS/basics.js"></script>
+</body>
+</html>
